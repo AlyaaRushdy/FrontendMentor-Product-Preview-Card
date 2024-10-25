@@ -7,20 +7,73 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./src/images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="./src/output.css" />
     <title>Frontend Mentor | Product preview card component</title>
   </head>
-  <body>
-    Perfume Gabrielle Essence Eau De Parfum A floral, solar and voluptuous
-    interpretation composed by Olivier Polge, Perfumer-Creator for the House of
-    CHANEL. $149.99 $169.99 Add to Cart
+  <body
+    class="min-h-screen bg-Cream flex items-center justify-center px-4 py-6 relative"
+  >
+    <main
+      class="grid grid-cols-1 sm:grid-cols-2 rounded-lg overflow-hidden max-w-96 sm:max-w-[37.5rem] font-body text-Dark_grayish_blue font-medium text-[14px] leading-none"
+    >
+      <section>
+        <img
+          src="./src/images/image-product-desktop.jpg"
+          alt="product image"
+          class="max-w-full hidden sm:block"
+        />
+        <img
+          src="./src/images/image-product-mobile.jpg"
+          alt="product image"
+          class="max-w-full block sm:hidden"
+        />
+      </section>
+      <section class="flex flex-col p-8 gap-6 bg-white">
+        <p class="uppercase tracking-[.25em]">Perfume</p>
+        <h1 class="font-headings text-[2rem] text-Very_dark_blue">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="leading-6">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="flex gap-4 items-center py-0.5">
+          <h2 class="font-headings text-[2rem] text-Dark_cyan">$149.99</h2>
+          <span class="line-through"> $169.99</span>
+        </div>
+        <button
+          class="bg-Dark_cyan hover:bg-green-950/85 focus::bg-green-950/85 transition-colors text-white py-4 rounded-lg font-bold"
+        >
+          <img
+            src="./src/images/icon-cart.svg"
+            alt="cart icon"
+            class="inline-block mr-2"
+          />
+          Add to Cart
+        </button>
+      </section>
+    </main>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <footer class="absolute bottom-1 text-center text-[11px] w-full">
+      <p>
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="text-[hsl(228,45%,44%)]"
+        >
+          Frontend Mentor
+        </a>
+        . Coded by
+        <a
+          href="https://github.com/AlyaaRushdy"
+          class="text-[hsl(228,45%,44%)]"
+        >
+          Alyaa Ahmed </a
+        >.
+      </p>
+    </footer>
   </body>
 </html>
