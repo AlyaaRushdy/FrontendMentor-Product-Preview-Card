@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor]()
-- Live Site URL: [Netlify]()
+- Solution URL: [FrontendMentor](https://www.frontendmentor.io/solutions/mobile-first-responsive-solution-using-tailwindcss-D68MEa3lZj)
+- Live Site URL: [Netlify](https://benevolent-squirrel-8dd395.netlify.app/)
 
 ## My process
 
